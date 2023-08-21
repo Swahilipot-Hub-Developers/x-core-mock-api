@@ -1,58 +1,287 @@
 {
-  "feedback": [
+  "users": [
     {
       "id": 1,
-      "rating": 10,
       "user_name": "Tony Stark",
-      "text": "You are the ironman of this world"
+      "gender": "male",
+      "email": "tonystark@mail.com",
+      "role": "case_manager"
     },
     {
       "id": 2,
-      "rating": 9,
-      "user_name": "Bruce Wayne",
-      "text": "You are the batman of this world"
+      "user_name": "Loki Odison",
+      "gender": "male",
+      "email": "loki@mail.com",
+      "role": "mentee"
     },
     {
       "id": 3,
-      "rating": 8,
-      "user_name": "Peter Parker",
-      "text": "You are the spiderman of this world"
+      "user_name": "Natasha Romanoff",
+      "gender": "female",
+      "email": "blackwidow@mail.com",
+      "role": "case_manager"
     },
     {
       "id": 4,
-      "rating": 7,
-      "user_name": "Clark Kent",
-      "text": "You are the superman of this world"
+      "user_name": "Peter Parker",
+      "gender": "male",
+      "email": "spiderman@mail.com",
+      "role": "mentee"
     },
     {
       "id": 5,
-      "rating": 6,
-      "user_name": "Barry Allen",
-      "text": "You are the flash of this world"
+      "user_name": "Wanda Maximoff",
+      "gender": "female",
+      "email": "scarletwitch@mail.com",
+      "role": "mentee"
     },
     {
       "id": 6,
-      "rating": 5,
-      "user_name": "Oliver Queen",
-      "text": "You are the green arrow of this world"
+      "user_name": "Steve Rogers",
+      "gender": "male",
+      "email": "captainamerica@mail.com",
+      "role": "case_manager"
     },
     {
       "id": 7,
-      "rating": 4,
-      "user_name": "Hal Jordan",
-      "text": "You are the green lantern of this world"
+      "user_name": "Thor Odinson",
+      "gender": "male",
+      "email": "thor@mail.com",
+      "role": "mentee"
     },
     {
       "id": 8,
-      "rating": 3,
-      "user_name": "Diana Prince",
-      "text": "You are the wonder woman of this world"
+      "user_name": "Carol Danvers",
+      "gender": "female",
+      "email": "captainmarvel@mail.com",
+      "role": "case_manager"
     },
     {
-      "rating": "10",
-      "text": "You The Best Boy out there",
-      "user_name": "Linda Mutheu",
-      "id": 9
+      "id": 9,
+      "user_name": "T'Challa",
+      "gender": "male",
+      "email": "blackpanther@mail.com",
+      "role": "mentee"
+    },
+    {
+      "id": 10,
+      "user_name": "Scott Lang",
+      "gender": "male",
+      "email": "antman@mail.com",
+      "role": "mentee"
+    },
+    {
+      "id": 11,
+      "user_name": "Stephen Strange",
+      "gender": "male",
+      "email": "doctorstrange@mail.com",
+      "role": "case_manager"
+    },
+    {
+      "id": 12,
+      "user_name": "Gamora",
+      "gender": "female",
+      "email": "gamora@mail.com",
+      "role": "mentee"
+    },
+    {
+      "id": 13,
+      "user_name": "Rocket",
+      "gender": "non-binary",
+      "email": "rocket@mail.com",
+      "role": "mentee"
+    },
+    {
+      "id": 14,
+      "user_name": "Groot",
+      "gender": "gender-fluid",
+      "email": "iamgroot@mail.com",
+      "role": "mentee"
+    },
+    {
+      "id": 15,
+      "user_name": "Sam Wilson",
+      "gender": "male",
+      "email": "falcon@mail.com",
+      "role": "case_manager"
+    },
+    {
+      "id": 16,
+      "user_name": "Nebula",
+      "gender": "female",
+      "email": "nebula@mail.com",
+      "role": "mentee"
+    },
+    {
+      "id": 17,
+      "user_name": "Bruce Banner",
+      "gender": "male",
+      "email": "hulk@mail.com",
+      "role": "case_manager"
+    }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "case_id": "SPH-CM-2023-01/01",
+      "case_title": "Spanish Language",
+      "case_description": "",
+      "case_manager": {
+        "id": 1,
+        "user_name": "Tony Stark",
+        "email": "tonystark@mail.com",
+        "role": "case_manager"
+      },
+      "case_mentees": [
+        {
+          "id": 1,
+          "user_name": "Tony Stark",
+          "email": "tonystark@mail.com",
+          "role": "case_manager"
+        }
+      ],
+      "resources": [
+        {
+          "id": 1,
+          "resource_name": "Spanish for Dummies",
+          "resource_type": "document",
+          "resource_external_link": "drive.google.com",
+          "resource_file_path": "/here/and-there"
+        },
+        {
+          "id": 2,
+          "resource_name": "Spanish for Masters",
+          "resource_type": "document",
+          "resource_external_link": "drive.google.com",
+          "resource_file_path": "/here/and-there-again"
+        }
+      ],
+      "sessions": [
+        {
+          "date": "2023-09-03",
+          "time": "2:00 PM",
+          "mode": "virtual",
+          "duration": "1.5 hours"
+        },
+        {
+          "date": "2023-09-07",
+          "time": "3:30 PM",
+          "mode": "physical",
+          "duration": "2 hours"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "case_id": "MTR-MT-2023-01/02",
+      "case_title": "Math Tutoring",
+      "case_description": "Providing math tutoring for students struggling with algebra.",
+      "case_manager": {
+        "id": 6,
+        "user_name": "Steve Rogers",
+        "email": "captainamerica@mail.com",
+        "role": "case_manager"
+      },
+      "case_mentees": [
+        {
+          "id": 4,
+          "user_name": "Peter Parker",
+          "email": "spiderman@mail.com",
+          "role": "mentee"
+        },
+        {
+          "id": 7,
+          "user_name": "Thor Odinson",
+          "email": "thor@mail.com",
+          "role": "mentee"
+        }
+      ],
+      "resources": [
+        {
+          "id": 3,
+          "resource_name": "Algebra Basics",
+          "resource_type": "document",
+          "resource_external_link": "drive.google.com",
+          "resource_file_path": "/math-resources/algebra-basics"
+        },
+        {
+          "id": 4,
+          "resource_name": "Advanced Algebra Techniques",
+          "resource_type": "document",
+          "resource_external_link": "drive.google.com",
+          "resource_file_path": "/math-resources/advanced-algebra"
+        }
+      ],
+      "sessions": [
+        {
+          "date": "2023-09-03",
+          "time": "2:00 PM",
+          "mode": "virtual",
+          "duration": "1.5 hours"
+        },
+        {
+          "date": "2023-09-07",
+          "time": "3:30 PM",
+          "mode": "physical",
+          "duration": "2 hours"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "case_id": "ART-MT-2023-01/03",
+      "case_title": "Art Mentorship",
+      "case_description": "Pairing aspiring artists with experienced mentors for guidance and inspiration.",
+      "case_manager": {
+        "id": 11,
+        "user_name": "Stephen Strange",
+        "email": "doctorstrange@mail.com",
+        "role": "case_manager"
+      },
+      "case_mentees": [
+        {
+          "id": 12,
+          "user_name": "Gamora",
+          "email": "gamora@mail.com",
+          "role": "mentee"
+        },
+        {
+          "id": 13,
+          "user_name": "Rocket",
+          "email": "rocket@mail.com",
+          "role": "mentee"
+        }
+      ],
+      "resources": [
+        {
+          "id": 5,
+          "resource_name": "Art Fundamentals Guide",
+          "resource_type": "document",
+          "resource_external_link": "drive.google.com",
+          "resource_file_path": "/art-resources/fundamentals-guide"
+        },
+        {
+          "id": 6,
+          "resource_name": "Mastering Sketching Techniques",
+          "resource_type": "document",
+          "resource_external_link": "drive.google.com",
+          "resource_file_path": "/art-resources/sketching-techniques"
+        }
+      ],
+      "sessions": [
+        {
+          "date": "2023-09-03",
+          "time": "2:00 PM",
+          "mode": "virtual",
+          "duration": "1.5 hours"
+        },
+        {
+          "date": "2023-09-07",
+          "time": "3:30 PM",
+          "mode": "physical",
+          "duration": "2 hours"
+        }
+      ]
     }
   ]
 }
